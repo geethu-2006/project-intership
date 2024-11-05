@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('http://www.pixelstalk.net/wp-content/uploads/2016/08/Desktop-Free-Creative-Photos.jpg') no-repeat center center/cover;
+}
+
+.begin-page, .stopwatch-page {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.timer-display {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #ff5a5f;
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff5a5f;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e84142;
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+#lap-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
