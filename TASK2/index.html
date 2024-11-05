@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Begin Page -->
+    <div class="begin-page" id="begin-page">
+        <h1>Welcome to Bubble Stopwatch</h1>
+        <button id="begin-button" class="btn">Begin</button>
+    </div>
+
+    <!-- Stopwatch Page -->
+    <div class="stopwatch-page" id="stopwatch-page" style="display: none;">
+        <div class="stopwatch">
+            <h1>Stopwatch</h1>
+            <div class="timer-display" id="timer-display">00:00:00.00</div>
+            <div class="controls">
+                <button id="start-btn" class="btn">Start</button>
+                <button id="stop-btn" class="btn" style="display: none;">Stop</button>
+                <button id="resume-btn" class="btn" style="display: none;">Resume</button>
+                <button id="lap-btn" class="btn" style="display: none;">Lap</button>
+                <button id="reset-btn" class="btn">Reset</button>
+            </div>
+            <div class="laps" id="laps">
+                <h3>Laps</h3>
+                <ul id="lap-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
