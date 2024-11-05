@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble - Welcome to Togethor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="https://norecipes.com/wp-content/uploads/2017/05/chicken-biryani-11.jpg" alt="Delicious Food 1">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.XzUnt5Afjbz_9Bmkng2IMQHaEK&pid=Api&P=0&h=180" alt="Delicious Food 2">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.XJ-PSOgTYaJq7KDk-wBqzAHaHa&pid=Api&P=0&h=180" alt="Delicious Food 3">
+                </div>
+            </div>
+            <h1>Welcome to <span>Bubble</span></h1>
+            <p>Your gateway to delicious moments with <b>Togethor</b></p>
+            <button onclick="window.location.href='togethor.html'">Begin</button>
+        </header>
+    </div>
+
+    <script>
+        // Carousel JavaScript
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide img');
+        
+        function showNextSlide() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
+
+
